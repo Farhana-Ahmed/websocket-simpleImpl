@@ -25,7 +25,7 @@ wss.on('headers', (headers, req) => {
 wss.on('connection', (ws, req) => {
     ws.send('This is a message from server, connection is established');
     ws.on('message', (msg) => {
-        console.log(msg);
+        console.log('comes in buffer form',msg);
     });
 });
 
